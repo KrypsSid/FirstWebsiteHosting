@@ -1,0 +1,31 @@
+body 
+{
+   background-color : #ffb6c1 ;
+   font-family : Cursive ;
+
+}
+
+h1
+{
+    margin-left : 50px;
+    background-Color : #111111 ; 
+    margin-right : 20px;
+    Color : White ;
+
+}
+
+p
+{
+  color : red ;
+  font-size : 100% ;
+ 
+}
+table
+{
+  background-Color : #111111 ; Color: white ;
+  
+}
+th
+{
+  font-size : 200% ;
+}
