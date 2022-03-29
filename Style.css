@@ -29,3 +29,24 @@ th
 {
   font-size : 200% ;
 }
+
+/*class can be used many times*/
+.myclass
+{
+   border: 10px;
+   border-color: aqua;
+   color: blueviolet;
+
+}
+.myclass :hover{
+  background-color : yellow;
+}
+/*Id's can be used only once*/
+#myId
+{
+  background-color : powderblue;
+  color : black;
+  padding: 40px;
+  text-align: center;
+}
+
