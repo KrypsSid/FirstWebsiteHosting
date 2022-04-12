@@ -118,7 +118,64 @@
                      alert("The number is not Prime");
                  }
               }
-                           
+
+
+              //CONSTRUCTOR
+              function Bike(Company , Model , Year)
+              {
+                this.Company = Company;
+                this.Model = Model;
+                this.Year = Year;
+
+                //var fruits = new Array("Apple" , "Mango" , "Grapes", 5)
+
+                //for(var i = 0; i < fruits.length ; i++ )
+                {
+                  //document.write(fruits[i] + "<br>")
+                  
+
+                }
+
+                
+
+
+
+              }
+              
+
+              
+              
+              //Object Created
+              var Object = new Bike(comp, mod , yr);
+              var Garage = new Array();
+
+              var BikeNum = prompt("How many bikes do you have in garage: ");
+              parseInt(BikeNum);
+              
+              
+              for(var i = 0 ; i < BikeNum ; i++ )
+              {
+                  prompt("Enter the Details");
+                  var comp, mod, yr;
+                  comp = prompt("Enter the company of your bike");
+                  mod = prompt("Enter the Model of bike");
+                  yr = prompt("Enter the model year");
+                  //alert("Your data: " + comp + " " + mod + " " + yr + " ");
+                  Garage[i] = comp;
+                  document.write(Garage[i] + "<br>")
+                 
+              }
+
+
+
+
+              var today = new Date();
+              document.write("Today's Date: " + today.getDate() + "<br>");
+              document.write("The Month: " + today.getMonth() + "<br>");
+              document.write("Current Time: " + today.getTime()+ "<br>");
+
+
+              document.write("Company: " + Object.Company + "<br>" + "Model: " + Object.Model + "<br>" + "Year: " + Object.Year + "<br>" );
                 
 
                
@@ -126,8 +183,8 @@
           </script>
 
           <form>
-          <input type = "button" onclick = "isPrime()" value = "Enter" >
-
+            
+            <input type = "button" onclick = "isPrime()" value = "Enter" >
           </form>
 
       </body>>
