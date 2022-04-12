@@ -1,7 +1,121 @@
 <html>
     <head>
         <title> Top 10 Games </title>
-        <link rel = "stylesheet" href = "https://github.com/KrypsSid/FirstWebsiteHosting/blob/master/MyFirstWebsiteCSSfile.css">
+        <style>
+            
+            * 
+            {
+                box-sizing: border-box;
+            }
+
+            body 
+            {
+                margin: 1;
+                zoom: 125%;
+                background-color: #333;
+
+            }
+            .MyPadding
+            {
+                padding-left: 8%;
+                padding-top: 0%;
+                padding-right: 8%;
+                padding-bottom: 0%;
+            }
+
+            .MyHeader
+            {
+                background-color: aqua;
+                font-size: 30px;
+                color: black;
+                text-align: center; 
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+            }
+            #MyAnimation
+            {
+                animation-name: example;
+                animation-duration: 10s;
+                animation-delay: 2s;
+                animation-fill-mode: both; 
+                animation-iteration-count: infinite;
+            }
+            H1
+            {
+                color: white;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            @keyframes example{
+                from {background-color: greenyellow;}
+                /*0% {background-color: rgb(0, 255, 128);}
+                25% {background-color: aqua;}
+                50% {background-color: green;}
+                75% {background-color: brown;}*/
+                25% {background-color: aqua;}
+                50% {background-color: red;}
+                75% {background-color: rgb(0, 255, 128);}
+                to {background-color:greenyellow;}
+            }
+            p
+            {
+                background-color: antiquewhite;
+                color: black;
+                padding-left: 6%;
+                padding-right: 6%;
+            }
+
+            .topnav 
+            {
+                overflow: hidden;
+                background-color: rgb(0, 0, 0);
+            }
+
+              /* Navbar links */
+            .topnav a 
+            {
+                float: left;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+              /* Links - change color on hover */
+            .topnav a:hover 
+            {
+                background-color: #ddd;
+                color: black;
+            }
+
+            #rcorners2 {
+                border-radius: 25px;
+                border: 2px solid #73AD21;
+                padding: 10px;
+                width: 300px;
+                height: 250px;
+            }
+
+            ul{
+                list-style: circle;
+            }
+
+            ul li::before {
+
+                /* \2022 is the CSS Code/unicode for a disc */
+                content: "\2022";  
+                color:black; 
+                display: inline-block; 
+                width: 1em;
+                margin-left: -0.9em;
+                font-weight: bold;
+                font-size:1.1rem;
+            }
+
+            
+            
+        </style>
 
     </head>
     <body>
@@ -9,7 +123,7 @@
         <div class="topnav">
             <table>
                 <tr>
-                    <td> <img src="https://github.com/KrypsSid/FirstWebsiteHosting/blob/master/093-600.png"> </td>
+                    <td> <img src="https://github.com/KrypsSid/FirstWebsiteHosting/blob/master/093-600.png?raw=true"> </td>
                     <td style="padding-left: 300px;"> <h1> TOP 10 GAMES OF ALL TIME </h1> </td>
 
                 </tr>
@@ -74,7 +188,7 @@ To give you some idea of what are the best and most popular mobile games on both
 
               <li id = "PubgMobile"> <b> PUBG MOBILE </b> <br>
                 <p> Most Popular Battle Royale Game. </p>
-                <img src="https://github.com/KrypsSid/FirstWebsiteHosting/blob/master/PubgScr.png"> <br> <hr>
+                <img src="https://github.com/KrypsSid/FirstWebsiteHosting/blob/master/PubgScrNew.jpg?raw=true"> <br> <hr>
                 <table cellpadding = "3" style="background-color: chartreuse; border: 2px solid white;
                 border-collapse: collapse;
                 background-color: #96D4D4;" >
@@ -144,7 +258,7 @@ To give you some idea of what are the best and most popular mobile games on both
 
               <li id = "GenshinImpact"> <b> GENSHIN IMPACT </b> <br>
                 <p> Most Popular RPG / Action Game. </p>
-                <img src="https://github.com/KrypsSid/FirstWebsiteHosting/blob/master/genshinscr.jpeg"> <br> <hr>
+                <img src="https://github.com/KrypsSid/FirstWebsiteHosting/blob/master/genshinscrNew.jpg?raw=true"> <br> <hr>
                 <table cellpadding = "3" style="background-color: chartreuse; border: 2px solid white;
                 border-collapse: collapse;
                 background-color: #96D4D4;" >
@@ -207,7 +321,7 @@ To give you some idea of what are the best and most popular mobile games on both
 
               <li id = "MobileLegends"> <b> MOBILE LEGENDS </b> <br>
                 <p> Most Popular MOBA Game. </p>
-                <img src="https://github.com/KrypsSid/FirstWebsiteHosting/blob/master/MobileLegendScr.jpeg"> <br> <hr>
+                <img src="https://github.com/KrypsSid/FirstWebsiteHosting/blob/master/MobileLegendScrNew.jpg?raw=true"> <br> <hr>
                 <table cellpadding = "3" style="background-color: chartreuse; border: 2px solid white;
                 border-collapse: collapse;
                 background-color: #96D4D4;" >
@@ -266,7 +380,7 @@ To give you some idea of what are the best and most popular mobile games on both
 
               <li id = "FreeFire"> <b> FREE FIRE </b> <br>
                 <p> Most Downloaded Game. </p>
-                <img src="https://github.com/KrypsSid/FirstWebsiteHosting/blob/master/FreeFireScr.jpeg"> <br> <hr>
+                <img src="https://github.com/KrypsSid/FirstWebsiteHosting/blob/master/FreeFireScrNew.jpg?raw=true"> <br> <hr>
                 <table cellpadding = "3" style="background-color: chartreuse; border: 2px solid white;
                 border-collapse: collapse;
                 background-color: #96D4D4;" >
@@ -335,7 +449,7 @@ To give you some idea of what are the best and most popular mobile games on both
               
               <li id = "8BallPool"> <b> 8 BALL POOL </b> <br>
                 <p> Most Popular Billiard Game. </p>
-                <img src="https://github.com/KrypsSid/FirstWebsiteHosting/blob/master/8ballpoolScr.jpeg"> <br> <hr>
+                <img src="https://github.com/KrypsSid/FirstWebsiteHosting/blob/master/8ballpoolScrNew.jpg?raw=true"> <br> <hr>
                 <table cellpadding = "3" style="background-color: chartreuse; border: 2px solid white;
                 border-collapse: collapse;
                 background-color: #96D4D4;" >
@@ -393,7 +507,7 @@ To give you some idea of what are the best and most popular mobile games on both
 
               <li id = "CallofDuty"> <b> CALL OF DUTY : MOBILE </b> <br>
                 <p> Most Popular Mobile Shooter Game. </p>
-                <img src="https://github.com/KrypsSid/FirstWebsiteHosting/blob/master/callofdutyScr.jpeg"> <br> <hr>
+                <img src="https://github.com/KrypsSid/FirstWebsiteHosting/blob/master/callofdutyScrNew.jpg?raw=true"> <br> <hr>
                 <table cellpadding = "3" style="background-color: chartreuse; border: 2px solid white;
                 border-collapse: collapse;
                 background-color: #96D4D4;" >
@@ -450,7 +564,7 @@ To give you some idea of what are the best and most popular mobile games on both
 
               <li id = "AmongUs"> <b> AMONG US </b> <br>
                 <p> Most Popular Multiplayer Social Game. </p>
-                <img src="https://github.com/KrypsSid/FirstWebsiteHosting/blob/master/AmongUsScr.jpeg"> <br> <hr>
+                <img src="https://github.com/KrypsSid/FirstWebsiteHosting/blob/master/AmongUsScrNew.jpg?raw=true"> <br> <hr>
                 <table cellpadding = "3" style="background-color: chartreuse; border: 2px solid white;
                 border-collapse: collapse;
                 background-color: #96D4D4;" >
@@ -510,7 +624,7 @@ To give you some idea of what are the best and most popular mobile games on both
 
               <li id = "Asphalt9"> <b> ASPHALT 9 </b> <br>
                 <p> Most Popular Mobile Racing Game. </p>
-                <img src="https://github.com/KrypsSid/FirstWebsiteHosting/blob/master/asphalt9Scr.jpeg"> <br> <hr>
+                <img src="https://github.com/KrypsSid/FirstWebsiteHosting/blob/master/asphalt9ScrNew.jpg?raw=true"> <br> <hr>
                 <table cellpadding = "3" style="background-color: chartreuse; border: 2px solid white;
                 border-collapse: collapse;
                 background-color: #96D4D4;" >
@@ -566,7 +680,7 @@ To give you some idea of what are the best and most popular mobile games on both
 
               <li id = "LeagueOfLegends"> <b> LEAGUE OF LEGENDS </b> <br>
                 <p> Most Popular Mobile MOBA Game. </p>
-                <img src="https://github.com/KrypsSid/FirstWebsiteHosting/blob/master/LEAGUEoflegendsScr.jpeg"> <br> <hr>
+                <img src="https://github.com/KrypsSid/FirstWebsiteHosting/blob/master/LEAGUEoflegendsScrNew.jpg?raw=true"> <br> <hr>
                 <table cellpadding = "3" style="background-color: chartreuse; border: 2px solid white;
                 border-collapse: collapse;
                 background-color: #96D4D4;" >
@@ -630,7 +744,7 @@ To give you some idea of what are the best and most popular mobile games on both
 
               <li id = "PokemonGo"> <b> POKEMON GO </b> <br>
                 <p> Most Popular AR Mobile Game. </p>
-                <img src="https://github.com/KrypsSid/FirstWebsiteHosting/blob/master/PokemonGoScr.jpeg"> <br> <hr>
+                <img src="https://github.com/KrypsSid/FirstWebsiteHosting/blob/master/PokemonGoScr.jpeg?raw=true"> <br> <hr>
                 <table cellpadding = "3" style="background-color: chartreuse; border: 2px solid white;
                 border-collapse: collapse;
                 background-color: #96D4D4;" >
@@ -723,9 +837,9 @@ To give you some idea of what are the best and most popular mobile games on both
              <div style = "padding-left: 40% ;">
                 <div style = "padding-left: 7% ;"><h2> Follow me </h2></div>
             
-           <a href="https://www.instagram.com/siddharth_inamdar"><img src="https://github.com/KrypsSid/FirstWebsiteHosting/blob/master/instaicon.png"> </a>
-           <a href="https://www.facebook.com/siddharth.inamdar.39"><img src="https://github.com/KrypsSid/FirstWebsiteHosting/blob/master/facebookicon.png">  </a>
-           <a href="https://www.linkedin.com/in/siddharth-inamdar-476a55230"><img src="https://github.com/KrypsSid/FirstWebsiteHosting/blob/master/linkedin.png"> </a>
+           <a href="https://www.instagram.com/siddharth_inamdar"><img src="https://github.com/KrypsSid/FirstWebsiteHosting/blob/master/instaicon.png?raw=true"> </a>
+           <a href="https://www.facebook.com/siddharth.inamdar.39"><img src="https://github.com/KrypsSid/FirstWebsiteHosting/blob/master/facebookicon.png?raw=true">  </a>
+           <a href="https://www.linkedin.com/in/siddharth-inamdar-476a55230"><img src="https://github.com/KrypsSid/FirstWebsiteHosting/blob/master/linkedin.png?raw=true"> </a>
              </div>
            </div>
         </div>
