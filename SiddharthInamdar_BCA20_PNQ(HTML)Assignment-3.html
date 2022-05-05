@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Assignment - 3 </title>
+        <style>
+            
+            body
+            {
+                background-color: black;
+                font-family:'Courier New', Courier, monospace;
+                font-size: medium;
+            }
+            text{
+                font-style: bold;
+            }
+            .myHeader
+            {
+                display: block;
+                box-sizing: border-box;
+                background-color: #333;
+                text-align: center;
+                color: aliceblue;
+                width: auto;
+                border-radius: 5px;
+               
+            }
+            .myTitle
+            {
+                border-radius: 4px;
+                box-sizing: border-box;
+                background-color:darkgreen;
+                text-align: center;
+                color: aliceblue;
+                width: auto;
+            }
+            table{
+                
+                padding-left: auto;
+                padding-right: auto;
+                border: 2px solid red;
+                border-radius: 10px;
+                margin-left: auto;
+                margin-right: auto;
+                
+            }
+            .myPadding
+            {
+                background-color: beige;
+                margin-left: 10%;
+                margin-right: 10%;
+                padding-left: 3%;
+                padding-right: 3%;
+                border-radius: 6px;
+            }
+            p
+            {
+                margin-left: 10%;
+                margin-right: 10%;
+                text-align: center;
+                background-color: #333;
+                color: aliceblue;
+                border-radius: 6px;
+            }
+            td
+            {
+                font-size: 100%;
+                font-style: bold;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                background-color:antiquewhite;
+            }
+
+            .button 
+            {
+                background-color: #4CAF50; /* Green */
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+            }
+            .button:hover
+            {
+                background-color: #333;
+            }
+            @keyframes anim
+            {
+                from {background-color: #333; color: aqua;}
+                50% {background-color:aqua; color:#333}
+                to {background-color: #333; color:aqua;}
+            }
+            .myAnim
+            {
+                animation-name: anim;
+                animation-duration: 6s;
+                animation-fill-mode: both;
+                animation-delay: 2s;
+                animation-iteration-count: infinite;
+            }
+
+        </style>
+         <script type = "text/javascript">
+             
+            
+
+            function Addition()
+            {
+                var num1;
+                var num2; 
+                num1 = document.getElementById("AddNum1").value;
+                num2 = document.getElementById("AddNum2").value;
+
+                if(isNaN(num1) || isNaN(num2) || num1 == 0 || num2 == 0)
+                {
+                    alert("Please Enter a valid Number");
+                    return false;
+                }
+                
+                  
+                num1 = parseFloat(num1);
+                num2 = parseFloat(num2);
+
+                var sum;
+                
+                sum = num1 + num2;
+                sum = parseFloat(sum);
+                
+                document.getElementById("Addition").innerHTML = sum;
+    
+            }
+            function Substraction()
+            {
+                var num1;
+                var num2; 
+                num1 = document.getElementById("Subnum1").value;
+                num2 = document.getElementById("Subnum2").value;
+
+                if(isNaN(num1) || isNaN(num2) || num1 == 0 || num2 == 0)
+                {
+                    alert("Please Enter a valid Number");
+                    return false;
+                }
+                  
+                num1 = parseFloat(num1);
+                num2 = parseFloat(num2);
+
+                var substraction;
+                
+                substraction = num1 - num2;
+                substraction = parseFloat(substraction);
+                
+                document.getElementById("Substraction").innerHTML = substraction;
+            }
+            function Division()
+            {
+                var num1;
+                var num2; 
+                num1 = document.getElementById("Divnum1").value;
+                num2 = document.getElementById("Divnum2").value;
+
+                if(isNaN(num1) || isNaN(num2) || num1 == 0 || num2 == 0)
+                {
+                    alert("Please Enter a valid Number");
+                    return false;
+                }
+                  
+                num1 = parseFloat(num1);
+                num2 = parseFloat(num2);
+
+                var division;
+                
+                division = num1 / num2;
+                division = parseFloat(division);
+                
+                document.getElementById("Division").innerHTML = division;
+            }
+            function Multiply()
+            {
+                var num1;
+                var num2; 
+                num1 = document.getElementById("MNum1").value;
+                num2 = document.getElementById("MNum2").value;
+
+                if(isNaN(num1) || isNaN(num2) || num1 == 0 || num2 == 0)
+                {
+                    alert("Please Enter a valid Number");
+                    return false;
+                }
+                  
+                num1 = parseFloat(num1);
+                num2 = parseFloat(num2);
+
+                var multiply;
+                
+                multiply = num1 * num2;
+                multiply = parseFloat(multiply);
+                
+                document.getElementById("Multiply").innerHTML = multiply;
+            }
+
+            function Square()
+            {
+                var num1;
+                
+                num1 = document.getElementById("SqNum").value;
+                
+                if(isNaN(num1) || num1 == 0)
+                {
+                    alert("Please Enter a valid Number");
+                    return false;
+                }
+                  
+                num1 = parseFloat(num1);
+                
+
+                var Square;
+                
+                Square =  num1 * num1;
+                Square = parseFloat(Square);
+                
+                document.getElementById("Square").innerHTML = Square;
+            }
+
+            function isPrime()
+            {
+                var Num = document.getElementById("PrimeNum").value;
+                parseInt(Num);
+
+                if(isNaN(Num) || Num == 0)
+                {
+                    alert("Please Enter a valid Number");
+                    return false;
+                }
+                //alert("The Number is : " + Num);
+                var a = 0;
+
+                for(var i=1 ; i<=Num ; i++)
+                {
+                    if(Num % i == 0 )
+                    {    
+                        a++;
+                    }
+
+                }
+
+                
+                if(a == 2)
+                {
+                   document.getElementById("Prime").innerHTML = "The Number is Prime.";
+                }
+                else if(a > 2)
+                {
+                   document.getElementById("Prime").innerHTML = "The Number is not Prime.";
+                }
+            }
+
+            function date()
+            {
+                var today = new Date();
+
+                document.write("Today's Date: " + today.getDate() + "<br>");
+                document.write("The Month: " + today.getMonth() + "<br>");
+                document.write("Current Time: " + today.getTime()+ "<br>");
+               
+                document.getElementById("currentDate").innerHTML = document.write("Date.getDate() : "+today.getDate()+"<br>");
+            }
+
+            
+              
+            
+            
+            
+
+        </script>
+
+       
+    </head>
+    <body>
+
+       <div class="myPadding">
+
+        
+
+        <div class="myHeader">
+            <h1> My Website </h1>
+            <h1 class = "myAnim" style="background-color: aliceblue; color: #333; border-radius: 5px;"> Calculator </h1>
+        </div>
+
+
+        <hr>
+         <div style="background-color: #4CAF50; border: #333; padding-top: 3%; padding-bottom: 3%; border-radius: 7px;">
+            <p> This is just a basic calculator. <br>
+                Perform basic calculations such as addition, subtraction, multiplication and division. <br>
+                It can also guess Prime Numbers and also give the Squares of the numbers.
+            </p>
+         </div>
+        <div>
+           <h1 class="myTitle">  Addition </h1>
+           <div>
+              <p> Enter the Numbers in the Field and press Enter for result </p>
+           
+            <table>
+                <tr> 
+                   <td> Enter the First Number: <br> <input type = "text" id = "AddNum1"   placeholder="Enter first number" > </td>
+                   <td> Enter the Second Number: <br> <input type = "text" id = "AddNum2"   placeholder="Enter second number" > </td>
+                  
+                </tr>
+                <tr>
+                    <td> <input class="button" type = "button" onclick = "Addition()" value = "Enter" > </td>
+                   
+                </tr>
+                <tr>
+                    <td> <p>Sum of the Two numbers is: <p id = "Addition" style = "color:greenyellow; background-color: #333;"></p> </p> </td>
+                </tr>
+            </table>
+           </div>
+        </div>
+
+
+        <hr>
+
+
+        <div>
+            <h1 class="myTitle">  Substraction </h1>
+            <div>
+                <p> Enter the Numbers in the Field and press Enter for result </p>
+             <table>
+                 <tr> 
+                    <td> Enter the First Number: <br> <input type = "text" id = "Subnum1"  placeholder="Enter first number" > </td>
+                    <td> Enter the Second Number: <br> <input type = "text" id = "Subnum2"  placeholder="Enter second number" > </td>
+                    
+                 </tr>
+                 <tr>
+                    <td> <input class="button" type = "button" onclick = "Substraction()" value = "Enter" > </td>
+                    
+                 </tr>
+                 <tr>
+                    <td> <p>Substraction of the Two numbers is: <p id = "Substraction" style = "color:greenyellow; background-color: #333;"></p> </p> </td>
+                 </tr>
+             </table>
+            </div>
+         </div>
+
+
+         <hr>
+
+         <div>
+            <h1 class="myTitle">  Multiplication </h1>
+            <div>
+                <p> Enter the Numbers in the Field and press Enter for result </p>
+             <table>
+                 <tr> 
+                    <td> Enter the First Number: <br> <input type = "text" id = "MNum1"  placeholder="Enter first number" > </td>
+                    <td> Enter the Second Number: <br> <input type = "text" id = "MNum2"  placeholder="Enter second number" > </td>
+                    
+                 </tr>
+                 <tr>
+                    <td> <input class="button" type = "button" onclick = "Multiply()" value = "Enter" > </td>
+                    
+                 </tr>
+                 <tr>
+                    <td> <p>Multiplication of the Two numbers is: <p id = "Multiply" style = "color:greenyellow; background-color: #333;"></p> </p> </td>
+                 </tr>
+             </table>
+            </div>
+         </div>
+
+
+         <hr>
+
+         <div>
+            <h1 class="myTitle">  Division </h1>
+            <div>
+                <p> Enter the Numbers in the Field and press Enter for result </p>
+             <table>
+                 <tr> 
+                    <td> Enter the First Number: <br> <input type = "text" id = "Divnum1"  placeholder="Enter first number" > </td>
+                    <td> Enter the Second Number: <br> <input type = "text" id = "Divnum2"  placeholder="Enter second number" > </td>
+                    
+                 </tr>
+                 <tr>
+                    <td> <input class="button" type = "button" onclick = "Division()" value = "Enter" > </td>
+                    
+                 </tr>
+                 <tr>
+                    <td> <p>Division of the Two numbers is: <p id = "Division" style = "color:greenyellow; background-color: #333;"></p> </p> </td>
+                 </tr>
+             </table>
+            </div>
+         </div>
+
+         <hr>
+
+         <div>
+            <h1 class="myTitle">  Square </h1>
+            <div>
+                <p> Enter the Number in the Field and press Enter for result </p>
+             <table>
+                 <tr> 
+                    <td> Enter the First Number: <br> <input type = "text" id = "SqNum"  placeholder="Enter number" > </td>
+                    
+                    
+                 </tr>
+                 <tr>
+                    <td> <input class="button" type = "button" onclick = "Square()" value = "Enter" > </td>
+                    
+                 </tr>
+                 <tr>
+                    <td> <p>Square of the number is: <p id = "Square" style = "color:greenyellow; background-color: #333;"></p> </p> </td>
+                 </tr>
+             </table>
+            </div>
+         </div>
+
+
+        <hr>
+
+         <div>
+            <h1 class="myTitle">  Prime Number </h1>
+            <div>
+                <p> Enter the Number in the Field and press Enter for result </p>
+             <table>
+                 <tr> 
+                    <td> Enter the First Number: <br> <input type = "text" id = "PrimeNum"  placeholder="Enter number" > </td>
+        
+                   
+                 </tr>
+                 <tr>
+                     <td> <input class="button" type = "button" onclick = "isPrime()" value = "Enter" > </td>
+                    
+                 </tr>
+                 <tr>
+                     <td> <p>Is it Prime or not: <p id = "Prime" style = "color:greenyellow; background-color: #333;"></p> </p> </td>
+                 </tr>
+             </table>
+            </div>
+         </div>
+          
+         <hr>
+         
+            <div style = "display: block;  box-sizing: border-box; align-content: center;">
+                
+                <h2 style="text-align: center; background-color:aquamarine;"> Follow me </h2>
+                <div style="padding-left: 40%; padding-right: 38%;">
+                <a href="https://www.instagram.com/siddharth_inamdar"><img src="https://github.com/KrypsSid/FirstWebsiteHosting/blob/master/instaicon.png?raw=true" width="40px"> </a>
+                <a href="https://www.facebook.com/siddharth.inamdar.39"><img src="https://github.com/KrypsSid/FirstWebsiteHosting/blob/master/facebookicon.png?raw=true" width="40px">  </a>
+                <a href="https://www.linkedin.com/in/siddharth-inamdar-476a55230"><img src="https://github.com/KrypsSid/FirstWebsiteHosting/blob/master/linkedin.png?raw=true" width="40px"> </a>
+                </div>
+            </div>
+            <hr>
+       </div>
+       <p id = "date"> </p>
+       <h4 style="color: aliceblue;"> -Page created by Siddharth inamdar <h4></h4>
+    </body>
+</html>
