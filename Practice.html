@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!--link rel='stylesheet' type='text/css' media='screen' href="C:\Users\SIDDHARTH INAMDAR\OneDrive\Documents\GitHub\FirstWebsiteHosting\MyFirstWebsiteCSSfile.css"-->
+
+    <!--<script src='main.js'></script>-->
+<style>
+    .box
+    {
+        
+        margin-left: 20%;
+        margin-right: 20%;
+        height: 600px;
+        border:2px solid red;
+        background-color: bisque;
+        
+      
+    }
+    .otherBox
+    {
+        
+        position: relative;
+        height:450px;
+        background-color: aqua;
+        margin:10%;
+    }
+    .tab
+    {
+        position: relative;
+        text-align: center;
+        margin-left: 35%;
+        margin-right: 35%;
+        padding-top: 20%;
+        
+
+    }
+    .button
+    {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+    img{
+        width:75px;
+        height:50px;
+        padding-left: auto;
+    }
+    .flex-container 
+    {
+        display: flex;
+        flex-direction: column;
+        margin:10%;
+        background-color: #f1f1f1;
+    }
+    .flex-container > div {
+        background-color: DodgerBlue;
+        color: white;
+        width: 100px;
+        margin: 10%;
+        text-align: center;
+        line-height: 1px;
+        font-size: 30px;
+    }
+    .myBox
+    {
+        display: inline-block;
+        background-color: #4CAF50;
+        width: 100px;
+        height: 30px;
+        border: 2px dotted red;
+        padding: 20px;
+        margin: 20%;
+    }
+    
+    
+   
+
+</style>
+<script>
+
+    function ValidateEmail(inputText)
+    {
+        var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        if(inputText.value.match(mailformat))
+        {
+            alert("Valid email address!");
+            document.form1.text1.focus();
+            return true;
+        }
+        else
+        {
+            alert("You have entered an invalid email address!");
+            document.form1.text1.focus();
+            return false;
+        }
+    }
+    
+
+</script>
+
+</head>
+<body>
+
+    <div class="box">
+        <!--div class="MyHeader">
+            <p> Hello </p>
+            <div class="topnav"> 
+                <a href=""> HOME </a> 
+                <a href=""> ABOUT </a>   
+           </div>
+        </div-->
+        
+        <!--<p id="DoSomenthing" style="padding-left: 200px;"> yaa <input type="button"  value="Enter " onclick="DoSomenthing()"  > </p>-->
+
+
+        <div class="otherBox">
+            <!--<table class="tab" >
+              <tr>
+                  <td> Please Enter you Name:<br> <input type="Text" placeholder="Enter your Name: "> </td>
+              </tr>
+              <tr>
+                <td> Please Enter your Password:<br> <input type="password" placeholder="Enter your Password: "> </td>
+              </tr>
+              <tr>
+                <td > <input type="button" class="button" value="Sign in"> </td>
+              </tr>
+              <tr>
+                <td> <img src="https://tpc.googlesyndication.com/simgad/14812014578132237515?sqp=4sqPyQQ7QjkqNxABHQAAtEIgASgBMAk4A0DwkwlYAWBfcAKAAQGIAQGdAQAAgD-oAQGwAYCt4gS4AV_FAS2ynT4&rs=AOga4qlfSA_SWzWMBPRROuNimMIL6CRruw"> </td>
+                <td> <img src="https://tpc.googlesyndication.com/simgad/14812014578132237515?sqp=4sqPyQQ7QjkqNxABHQAAtEIgASgBMAk4A0DwkwlYAWBfcAKAAQGIAQGdAQAAgD-oAQGwAYCt4gS4AV_FAS2ynT4&rs=AOga4qlfSA_SWzWMBPRROuNimMIL6CRruw"> </td>
+              </tr>
+
+
+            </table>-->
+            <!--<div class="flex-container">
+                <div>
+                    Please Enter you Name:<br> <input type="Text" id="DoSomenthing" placeholder="Enter your Name: "> 
+                </div>
+                <div>
+                    Please Enter your Password:<br> <input type="password" placeholder="Enter your Password: "> 
+                </div>
+                <div>
+                    <button class="button" onclick="ValidateEmail()"> Sign In</button>
+                </div>
+                <div style="flex-direction: row;">
+                    <img src="https://tpc.googlesyndication.com/simgad/14812014578132237515?sqp=4sqPyQQ7QjkqNxABHQAAtEIgASgBMAk4A0DwkwlYAWBfcAKAAQGIAQGdAQAAgD-oAQGwAYCt4gS4AV_FAS2ynT4&rs=AOga4qlfSA_SWzWMBPRROuNimMIL6CRruw"> </td>
+                    <img src="https://tpc.googlesyndication.com/simgad/14812014578132237515?sqp=4sqPyQQ7QjkqNxABHQAAtEIgASgBMAk4A0DwkwlYAWBfcAKAAQGIAQGdAQAAgD-oAQGwAYCt4gS4AV_FAS2ynT4&rs=AOga4qlfSA_SWzWMBPRROuNimMIL6CRruw"> 
+                </div>
+            </div>-->
+
+            <form name="form1" action="#"> 
+                <ul>
+                <li><input type='text' name='text1'/></li>
+                <li>&nbsp;</li>
+                <li class="submit"><input type="submit" name="submit" value="Submit" onclick="ValidateEmail(document.form1.text1)"/></li>
+                <li>&nbsp;</li>
+                </ul>
+            </form>
+
+            <div>
+                <form action="">
+                  <label for="usrname">Username</label>
+                  <input type="text" id="usrname" name="usrname" required>
+              
+                  <label for="psw">Password</label>
+                  <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+              
+                  <input type="submit" value="Submit">
+                </form>
+              </div>
+              
+              <div id="message">
+                <h3>Password must contain the following:</h3>
+                <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+                <p id="number" class="invalid">A <b>number</b></p>
+                <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+              </div>
+
+            
+
+
+        </div>
+        
+
+        <div class="myBox">
+
+        </div>
+        
+
+        
+
+    </div>
+    
+</body>
+</html>
