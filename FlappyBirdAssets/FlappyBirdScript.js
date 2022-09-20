@@ -1,8 +1,8 @@
 let move_speed = 10, grativy = 0.5;
 let bird = document.querySelector('.bird');
 let img = document.getElementById('bird-1');
-let sound_point = new Audio('https://github.com/KrypsSid/FirstWebsiteHosting/blob/master/FlappyBirdAssets/Click_Soft_02.mp3');
-let sound_die = new Audio('https://github.com/KrypsSid/FirstWebsiteHosting/blob/master/FlappyBirdAssets/Click_Electronic_12.mp3');
+let sound_point = new Audio('https://krypssid.github.io/FirstWebsiteHosting/FlappyBirdAssets/Click_Soft_02.mp3');
+let sound_die = new Audio('https://krypssid.github.io/FirstWebsiteHosting/FlappyBirdAssets/Click_Electronic_12.mp3');
 
 // getting bird element properties
 let bird_props = bird.getBoundingClientRect();
